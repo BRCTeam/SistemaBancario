@@ -1,0 +1,67 @@
+<ion-side-menus enable-menu-with-back-views="false" expose-aside-when="large">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="menuLateral">
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">Operações</h1>
+    </ion-header-bar>
+
+    <ion-content>
+      <ion-list>
+        
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="!isAdmin()">
+          <i class="icon ion-social-usd-outline"></i>
+           Resumo Financeiro
+        </a>
+
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/extrato" ng-if="!isAdmin()">
+          <i class="icon ion-ios-list-outline"></i>
+           Extrato
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/pagamento" ng-if="!isAdmin()">
+          <i class="icon ion-ios-copy-outline"></i>
+           Pagamentos
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/infotaxas" ng-if="!isAdmin()">
+          <i class="icon ion-ios-information-outline"></i>
+            Informações sobre taxas
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/mensagens" ng-if="!isAdmin()">
+          <i class="icon ion-ios-email-outline"></i>
+           Mensagens
+           <span class="badge badge-assertive">2</span>
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/dadospessoais" ng-if="!isAdmin()">
+          <i class="icon ion-ios-person-outline"></i>
+           Alterar dados pessoais
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="!isAdmin()">
+          <i class="icon ion-ios-location-outline"></i>
+           Caixas Eletrônicos
+        </a>
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/desconectar">
+          <i class="icon ion-ios-close-outline"></i>
+          Desconectar
+        </a>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

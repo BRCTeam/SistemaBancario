@@ -1,0 +1,45 @@
+<ion-view view-title="Extrato">
+  <ion-content class="pagina">
+  
+  <div class="areaPagina botaoEspacamento center" >
+		<h5>Informações do filtro</h5>	  
+	 </div>
+
+  <div class="list card">
+
+
+	  <label class="item item-input item-select">
+
+	  
+	    <div class="input-label">
+	      Conta
+	    </div>
+	    <select>
+	      <option>Conta Corrente 1 - 0888-8123318-123</option>
+	      <option selected>Conta Corrente 2 - 0888-812318-123</option>
+	      <option>Conta Poupança 1 - 0834-812318-123</option>
+	    </select>
+	  </label>
+	  <label class="item item-input ">
+        <span class="input-label">Inicio</span>
+        <input type="date" ng-model="busca.inicio">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Fim</span>
+        <input type="date" ng-model="busca.fim">
+      </label>
+  </div>
+
+   <div class="areaPagina botaoEspacamento" >
+	  <button class="button button-balanced icon-right ion-chevron-right" style="float: right;">
+		   Consultar Extrato
+	   </button>
+   </div>
+   
+
+  </ion-content>
+
+</ion-view>
+
+
+

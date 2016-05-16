@@ -1,0 +1,66 @@
+<ion-view view-title="Alterar dados pessoais">
+  <ion-content class="pagina">
+  	
+  	 <div class="areaPagina botaoEspacamento center" >
+		<h5>Informações básicas</h5>	  
+	 </div>
+
+  	<div class="card list">
+  	  <label class="item item-input item-floating-label">
+	    <span class="input-label">Nome Completo</span>
+	    <input type="text" placeholder="Nome Completo" ng-model="dados.nome">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">E-mail</span>
+	    <input type="text" placeholder="E-mail" ng-model="dados.email">
+	  </label>
+
+  	</div>
+
+  	 <div class="areaPagina botaoEspacamento center" >
+		<h5>Telefones</h5>	  
+	 </div>
+
+	<div class="card list">
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">1º Telefone</span>
+	    <input type="text" placeholder="1º Telefone" ng-model="dados.telefone[0]">
+	  </label>
+
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">2º Telefone</span>
+	    <input type="text" placeholder="1º Telefone" ng-model="dados.telefone[1]">
+	  </label>
+
+  	</div>
+
+  	<div class="areaPagina botaoEspacamento center" >
+		<h5>Endereço</h5>	  
+	 </div>
+
+	 <div class="card list">
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">1º Endereço</span>
+	    <input type="text" placeholder="1º Endereço" ng-model="dados.telefone[0]">
+	  </label>
+
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">2º Endereço</span>
+	    <input type="text" placeholder="1º Endereço" ng-model="dados.telefone[1]">
+	  </label>
+
+  	</div>
+
+
+  	<div class="areaPagina botaoEspacamento" >
+	  <button class="button button-balanced" style="float: right;">
+		   Gravar
+	   </button>
+   </div>
+
+  </ion-content>
+
+</ion-view>
+
+
+
