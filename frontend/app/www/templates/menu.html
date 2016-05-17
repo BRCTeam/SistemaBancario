@@ -19,48 +19,82 @@
 
     <ion-content>
       <ion-list>
-        
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="!isAdmin()">
-          <i class="icon ion-social-usd-outline"></i>
+        <div class="divisaoMenu item item-divider assertive" ng-if="isCliente()&&isAdmin()">
+           Administrativo 
+         </div>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/pessoas" ng-if="isAdmin()">
+          <i class="icon ion-ios-people"></i>
+           Pessoas
+        </a> 
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/contas" ng-if="isAdmin()">
+          <i class="icon ion-briefcase"></i>
+           Contas Bancárias
+        </a> 
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/enviarmsg" ng-if="isAdmin()">
+          <i class="icon ion-email-unread"></i>
+           Enviar Mensagem
+        </a> 
+
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/enviarmsg" ng-if="isAdmin()">
+          <i class="icon ion-pricetags"></i>
+           Taxas bancárias
+        </a> 
+
+        <!-----------------------------------------------------------------------------------------
+                                           MENU DO CLIENTE
+          ---------------------------------------------------------------------------------------->
+         <div class="divisaoMenu item item-divider assertive" ng-if="isCliente()&&isAdmin()">
+           Acesso Pessoal 
+         </div>
+
+ 
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="isCliente()">
+          <i class="icon ion-social-usd"></i>
            Resumo Financeiro
         </a>
 
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/extrato" ng-if="!isAdmin()">
-          <i class="icon ion-ios-list-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/extrato" ng-if="isCliente()">
+          <i class="icon ion-ios-list"></i>
            Extrato
         </a>
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/pagamento" ng-if="!isAdmin()">
-          <i class="icon ion-ios-copy-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/pagamento" ng-if="isCliente()">
+          <i class="icon ion-ios-copy"></i>
            Pagamentos
         </a>
+        
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/transferencia" ng-if="isCliente()">
+          <i class="icon ion-shuffle"></i>
+           Transferência
+        </a>
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/infotaxas" ng-if="!isAdmin()">
-          <i class="icon ion-ios-information-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/infotaxas" ng-if="isCliente()">
+          <i class="icon ion-ios-information"></i>
             Informações sobre taxas
         </a>
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/mensagens" ng-if="!isAdmin()">
-          <i class="icon ion-ios-email-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/mensagens" ng-if="isCliente()">
+          <i class="icon ion-ios-email"></i>
            Mensagens
            <span class="badge badge-assertive">2</span>
         </a>
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/dadospessoais" ng-if="!isAdmin()">
-          <i class="icon ion-ios-person-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/dadospessoais" ng-if="isCliente()">
+          <i class="icon ion-ios-person"></i>
            Alterar dados pessoais
         </a>
 
-        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="!isAdmin()">
-          <i class="icon ion-ios-location-outline"></i>
+        <a class="item item-icon-left menu-close menuLateral" href="#/app/resumo" ng-if="isCliente()">
+          <i class="icon ion-ios-location"></i>
            Caixas Eletrônicos
         </a>
 
         <a class="item item-icon-left menu-close menuLateral" href="#/app/desconectar">
-          <i class="icon ion-ios-close-outline"></i>
+          <i class="icon ion-ios-close"></i>
           Desconectar
         </a>
+
       </ion-list>
     </ion-content>
   </ion-side-menu>

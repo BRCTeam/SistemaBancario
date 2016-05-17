@@ -1,0 +1,45 @@
+<ion-view view-title="Enviar Mensagem">
+  <ion-content class="pagina">
+
+  <div class="areaPagina botaoEspacamento center" >
+		<h5>Destinatários</h5>	  
+	 </div>
+
+  <div class="areaPagina card">
+	  	<div class="list">
+		  	 <div class="item item-avatar item-icon-right" href="#/app/detalhepessoa">
+			    <img src="img/avatar/1.png">
+			    <h2>João da Silva</h2>
+			    <p>Dois Vizinhos, Paraná, (46) 99216492</p>
+			     <i class="icon ion-android-close"></i>
+			 </div>
+		</div>
+
+		<a class="item item-icon-left item-icon-right" href="" ng-click="buscaPessoa()">
+		    <i class="icon ion-person-add"></i>
+		    Adicionar destinatário
+		    <i class="icon ion-ios-search"></i>
+		</a>
+
+	</div>	
+
+  	<div class="areaPagina card">
+
+	  	<div class="list">
+
+		  <dig class="item" >		 
+		  	 <textarea id="txtMsg" style="width: 100%" placeholder="Digite a mensagem" rows="1" ng-keyup="expandTextMsg()"
+			  ng-keydown="expandTextMsg()" ></textarea>
+
+		  	 <button class="button button-balanced icon-right ion-ios-paperplane-outline" style="float: right; margin-top: 20px">
+				  Enviar
+			 </button>
+	  	  </div>
+
+	</div>
+  </ion-content>
+
+</ion-view>
+
+
+

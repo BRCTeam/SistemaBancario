@@ -90,7 +90,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'DadosPessoaisCtrl'
       }
     }
-  });
+  })
+
+.state('app.pessoas', {
+    url: '/pessoas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pessoas.html',
+        controller: 'PessoasCtrl'
+      }
+    }
+  })
+
+.state('app.detalhepessoa', {
+    url: '/detalhepessoa',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/detalhepessoa.html',
+        controller: 'PessoasCtrl'
+      }
+    }
+  })
+
+.state('app.enviarmsg', {
+    url: '/enviarmsg',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/enviarmsg.html',
+        controller: 'PessoasCtrl'
+      }
+    }
+  })
+
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/resumo');
 });
